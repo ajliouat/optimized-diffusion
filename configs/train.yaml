@@ -1,0 +1,15 @@
+# Training configuration
+dataset:
+  path: "data/datasets/custom_dataset"
+  batch_size: 16
+  image_size: 512
+
+model:
+  unet: "models/unet/optimized_unet.py"
+  lora: true
+  lora_rank: 8
+
+training:
+  epochs: 10
+  learning_rate: 1e-4
+  use_flash_attention: true

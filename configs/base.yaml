@@ -1,0 +1,20 @@
+# Base configuration for the project
+defaults:
+  - dataset: "custom_dataset"
+  - model: "optimized_unet"
+  - training: "default_training"
+
+dataset:
+  path: "data/datasets/custom_dataset"
+  batch_size: 16
+  image_size: 512
+
+model:
+  unet: "models/unet/optimized_unet.py"
+  lora: false
+  lora_rank: 8
+
+training:
+  epochs: 10
+  learning_rate: 1e-4
+  use_flash_attention: true

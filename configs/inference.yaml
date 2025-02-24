@@ -1,0 +1,9 @@
+# Inference configuration
+model:
+  checkpoint: "models/checkpoints/final_model.pth"
+  use_flash_attention: true
+
+inference:
+  prompt: "A futuristic cityscape at sunset"
+  num_images: 4
+  image_size: 512
